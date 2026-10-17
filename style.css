@@ -1,0 +1,5 @@
+body{font-family:system-ui,sans-serif;max-width:640px;margin:40px auto;padding:0 16px;color:#222}
+.row{display:flex;gap:28px;margin:32px 0}
+button{width:88px;height:88px;border:2px solid #888;border-radius:14px;background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}
+button svg{width:56px;height:56px}
+#status{font-size:28px;font-weight:600;min-height:40px}

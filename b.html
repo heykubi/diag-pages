@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Diagnostic page B</title><meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="style.css"></head>
+<body>
+<h1>Diagnostic page B</h1>
+<p>A browser-automation test fixture. The controls below have no text.</p>
+<div class="row">
+<button id="c1" type="button"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z" fill="#e74c3c"/></svg></button>
+<button id="c2" type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2" fill="none" stroke="#444" stroke-width="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1" stroke="#444" stroke-width="2.4"/></svg></button>
+<button id="c3" type="button"><svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4z" fill="#2c7be5"/><circle cx="12" cy="21" r="2" fill="#2c7be5"/></svg></button>
+</div>
+<div id="status" aria-live="polite">Notifications are off</div>
+<script>
+const s=document.getElementById("status");
+document.getElementById("c1").onclick=()=>{s.textContent="Liked"};
+document.getElementById("c2").onclick=()=>{s.textContent="Settings are not available here"};
+document.getElementById("c3").onclick=()=>{s.textContent="Notifications on: "+String(39*100+7)};
+</script></body></html>
